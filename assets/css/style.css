@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    color: #777777; 
+    background: url(/Users/boyangmatsapola/Desktop/basic_portfolio/papyrus.png);  
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    position: absolute;
+    font-family: 'Libre Baskerville', serif;
+    top:0;
+    left: 0;
+    background-color: #ffffff;
+    border: #cccccc;
+    width: 100%;
+    border-bottom: lightgray 3px solid;
+}
+
+.wrapper{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#name{
+    display: inline-block;
+    background-color: teal;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white; 
+    width: 48%;
+    text-align: center;
+
+}
+
+ul {
+    display: inline-block;
+    width: 48%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-right: black 1px solid;
+ }
+
+ ul li a{
+     text-decoration: none;
+     color: #777777;
+     text-align: center;
+ }
+ ul li a:hover {
+     opacity: 0.4;
+ }
+
+ li:last-child{
+    border-right: none;
+}
+
+#main-content{
+    width: 100%;
+    margin: 0 0 0px 0;
+}
+
+.basic-info{
+    background-color: #ffffff;
+    max-width: 75%;
+    box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.75);
+    padding: 25px 0;
+    margin: 100px auto;
+
+}
+
+#title{
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px #444444;
+    color: teal;
+    border-bottom: solid 5px lightgray;
+    padding: 0px;
+    margin: 0px 25px;
+}
+
+#biopic{
+    float:left;
+    width: 25%;
+    margin: 10px 0px 0px 26px;
+}
+
+#aboutMe{
+    float: right;
+    width:65%;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.group:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    background: lightgrey;
+    padding: 10px;
+    text-align: center;
+}
+
+#name,
+#title{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.basic-info p{
+    margin: 10px 25px;   
+}
+#nameField,
+#email{
+    width: 80%;
+    padding: 10px 0;
+    margin: 0 25px;
+}
+
+#message{
+    width: 80%;
+    padding:0;
+    margin: 0 25px;
+    height: 100px;
+}
+.basic-info a{
+    display: inline-block;
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin: 0;
+    width: 100%;
+    padding:10px 0;
+    background-color: teal;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hangman,
+.apps,
+.Rpg,
+.widget,
+.Rock{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+} 
+.hangman,
+.Rpg{
+    background: teal url('https://leaderonomics.com/wp-content/uploads/2017/04/1807658-1-600x470.jpg') center no-repeat;
+    background-size: cover;
+}
+.widget,
+.Rock,
+.apps{
+    background: url('https://702rc195vu6fsa4x3pnb6d8m-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/AI-circuit-board-tech-16.9.jpg');
+    background-size: cover;
+}
+button{
+    padding: 10px;
+    background: teal;
+    color: white;
+    margin: 25px;
+    border-radius: 4px;
+}
+.zoom {
+    transition: transform .2s; /* Animation for the zoom feature */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.25); /* (125% zoom) */
+  }
+  @media only screen and (max-width:768px){
+    #name{
+        width: 100%;
+    }  
+    ul{
+          display: inline-block;
+          width: 100%;
+      }
+      ul li a{
+          display: inline-block;
+          font-size: 1.5em;
+      }
+      .wrapper{
+          display: block;
+      }
+      #main-content{
+        width: 100%;
+        margin: 107px 0 -50px 0;
+      }
+      #biopic{
+          float: none;
+          width: 50%;
+          margin: 0 5%;
+
+      }
+      .basic-info{
+          width: 90%;
+          margin: 10px auto 0;
+      }
+      .basic-info p {
+          margin: auto;
+      }
+      #aboutMe{
+          float: none;
+          width: 90%;
+          font-size: 1em;
+          margin: auto;
+      }
+      .basic-info p{
+          margin: 6% 5%;
+      }
+.hangman,
+.apps,
+.Rpg,
+.widget,
+.Rock{
+    width: 50%;
+    /* height: 100px; */
+    margin: 10px auto;
+    display: block;
+}
+@media (min-width:980px){
+
+    #main-content{
+        max-width: 100%;
+        margin: 107px 0 -50px 0;
+      }
+      .basic-info{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+  }
