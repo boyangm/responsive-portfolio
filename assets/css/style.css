@@ -106,7 +106,7 @@ ul {
 
 #aboutMe{
     float: right;
-    width:65%;
+    width:50%;
     font-size: 1.5rem;
     line-height: 1.5em;
 }
@@ -172,7 +172,7 @@ footer{
 .Rock{
     width: 150px;
     height: 150px;
-    margin: 25px;
+    margin: 15px;
     position: relative;
     display: inline-block;
     background-size: cover;
@@ -252,16 +252,27 @@ button{
     margin: 10px auto;
     display: block;
 }
-@media (min-width:980px){
+@media (max-width:1000px) and (min-width:7680px){
+
 
     #main-content{
         max-width: 100%;
         margin: 107px 0 -50px 0;
       }
       .basic-info{
-        max-width: 500px;
+        max-width: 75%;
+        max-height: 500px;
         margin: 0 auto;
     }
+    #aboutMe{
+        width:50%;
+        margin: 0 auto;
+        float: right;
+    }
+    .basic-info p {
+        
+        margin: auto;
+        font-size: 12px;
+    }
 }
-
   }
